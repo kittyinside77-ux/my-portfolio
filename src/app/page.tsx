@@ -291,14 +291,17 @@ const MaoxiangProject = ({ index }: { index: number }) => {
             transition={{ type: "spring", bounce: 0.4, duration: 0.8 }}
             viewport={{ once: false, amount: 0.2 }}
           >
-            <video
-              src="/videos/maoxiang-cup.mp4"
-              autoPlay
-              muted
-              playsInline
-              loop
-              className="w-full aspect-video object-cover"
-            />
+            <div className="aspect-video w-full overflow-hidden rounded-xl bg-gray-100 shadow-inner">
+  <iframe 
+    src="//player.bilibili.com/player.html?isOutside=true&aid=116262533341182&bvid=BV1TEAHzhEK8&cid=36848601096&p=1&autoplay=0" 
+    scrolling="no" 
+    border="0" 
+    frameborder="no" 
+    framespacing="0" 
+    allowfullscreen="true"
+    className="w-full h-full"
+  ></iframe>
+</div>
           </motion.div>
           <div className="grid grid-cols-3 gap-4">
             {maoxiangImages.map((img, i) => (
@@ -688,11 +691,17 @@ const WorksSection = () => {
           >
             毕设正片
           </motion.h3>
-          <VideoShowcase
-            src="/videos/graduation-main.mp4"
-            poster="/images/process-1.jpg"
-            title="毕业设计作品"
-          />
+         <div className="aspect-video w-full overflow-hidden rounded-xl bg-gray-100 shadow-inner">
+  <iframe 
+    src="//player.bilibili.com/player.html?isOutside=true&aid=116262533341144&bvid=BV1TEAHzhENR&cid=36848600260&p=1&autoplay=0" 
+    scrolling="no" 
+    border="0" 
+    frameborder="no" 
+    framespacing="0" 
+    allowfullscreen="true"
+    className="w-full h-full"
+  ></iframe>
+</div>
         </div>
 
         <motion.div
